@@ -24,13 +24,13 @@ public class ConditionalExpression {
 		String name = "ゆめ";
 		Random rnd = new Random();
 		int score = rnd.nextInt(100) + 1;
-			if(score < 40) {
+			if(score <= 40) {
 				System.out.println(name + "さんは" + score +  "点です。もう少し頑張りましょう。");
-			}else if(score > 40 || score < 60) {
+			}else if(score <= 60) {
 				System.out.println(name + "さんは" + score + "点です。もう少しでした。");
-			}else if(score > 60 || score < 80) {
+			}else if(score <= 80) {
 				System.out.println(name + "さんは" + score + "点です。よくできました。");
-			}else if(score > 80) {
+			}else {
 				System.out.println(name + "さんは" + score + "点です。たいへんよくできました。");
 			}
 //		問３）
