@@ -17,7 +17,7 @@ public class DataTypeAndMemory {
 		System.out.println(d);
 		// Q5：変数numsに「10, 100, 1000」が格納された配列を代入して、コンソールにメモリの番地が1のデータを出力してください。
 		int nums[] = {10,100,1000};
-		System.out.println(nums[0]);
+		System.out.println(nums[1]);
 		// Q6：Q5で作成した変数numsを変数bに代入し、その後変数bのメモリの番地が1のデータを「8」に上書きさせて
 		//     コンソールに変数numsと変数bのメモリの番地が1のデータを出力させて、変数nums値が変わることを確認してください。
 		int [] b = nums;
