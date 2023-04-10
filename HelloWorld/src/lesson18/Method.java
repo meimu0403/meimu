@@ -56,14 +56,16 @@ public class Method {
 //		３,取り出した値の平均で少数点まで出す。返す。
 		public static double avg(int r) {
 			
-			int [] num3 = num2(r);
-			int num5 = 0;
-			for(int num4: num3) {
+			int [] nums3 = num2(r);
+			System.out.println(Arrays.toString(nums3));
+			double num5 = 0;
+			for(int num4: nums3) {
 				num5 += num4;
 			}
-			double num6 = num5 / num3.length;
+			double num6 = num5 / nums3.length;
 			return num6;
 		}
 	}
+
 
 
