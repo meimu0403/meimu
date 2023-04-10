@@ -1,21 +1,22 @@
 package lesson18;
 
+import java.util.Arrays;
 import java.util.Random;
 
 public class Method {
 
 	public static void main(String[] args) {
 	// Q1：コンソールに「Hello Java」とコンソールに出力するメソッド（関数）を作成してください。
-//		hello ();
-//		num(8);
-//		num1(3,4);
-//		num1(2.1,3.3);
-//		System.out.println(num(8));
-//		System.out.println(num1(3,4));
-//		System.out.println(num1(2.1,3.3));
-//		
-//		System.out.println(Arrays.toString(num2(2)));
-//		System.out.println(avg(2));
+		hello ();
+		num(8);
+		num1(3,4);
+		num1(2.1,3.3);
+		System.out.println(num(8));
+		System.out.println(num1(3,4));
+		System.out.println(num1(2.1,3.3));
+		
+		System.out.println(Arrays.toString(num2(2)));
+		System.out.println(avg(2));
 	}
 		public static void hello() {
 			System.out.println("Hello Java");
