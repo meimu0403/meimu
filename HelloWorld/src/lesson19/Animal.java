@@ -17,12 +17,13 @@ public class Animal {
 		
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         Date date = new Date();
-        
+        //現在の日付を取得
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(date);
-        
+        //calendarメソッドを利用　カレンダー方式
         Date d1 = calendar.getTime();
         System.out.println(sdf.format(d1));
+        //上記のメソッド（値）を代入してコンソール出力
         
 	}
 }
