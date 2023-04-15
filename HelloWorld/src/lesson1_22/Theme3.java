@@ -6,7 +6,6 @@ import java.util.Date;
 public class Theme3 {
 
 	public static void main(String[] args) {
-		
 		Theme2 a = new Theme2(); //THemeのパッケージ呼び出し
 		a.hello();
 		a.sushi();
