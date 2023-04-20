@@ -46,8 +46,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         // 都道府県データの定義
-         Sub[] prefectures = { //配列に下記を代入
-            new Sub("北海道", "札幌市", 83424), //インスタンス化した破裂の値
+         Sub[] prefectures = { // 配列に下記を代入
+            new Sub("北海道", "札幌市", 83424), // インスタンス化した破裂の値
             new Sub("青森県", "青森市", 9646),
             new Sub("岩手県", "盛岡市", 15275),
             new Sub("宮城県", "仙台市", 7282),
@@ -60,17 +60,17 @@ public class Main {
             new Sub("埼玉県", "さいたま市", 3798)
         };
 
-        // Prompt the user for input
-        Scanner scanner = new Scanner(System.in); //スキャナー処理を記述
+        // 入力を求める処理
+        Scanner scanner = new Scanner(System.in); // スキャナー処理を記述
         System.out.print("数字と昇順・降順の値を入力");
-        String[] indicesStr = scanner.nextLine().split("\\s+"); //配列の中身分割
-        List<Integer> indices = new ArrayList<>(); //new演算子とArrayListで空のListを用意する
-        for(String indexStr : indicesStr) { //繰り返す処理
-            indices.add(Integer.parseInt(indexStr)); //文字列変換する
+        String[] indicesStr = scanner.nextLine().split("\\s+"); // 配列の中身分割
+        List<Integer> indices = new ArrayList<>(); // new演算子とArrayListで空のListを用意する
+        for(String indexStr : indicesStr) { // 繰り返す処理
+            indices.add(Integer.parseInt(indexStr)); // 文字列変換する
         }
 
         System.out.print("昇順の場合は 1、降順の場合は 0 を入力します。");
-        int order = scanner.nextInt(); //スキャナー処理
+        int order = scanner.nextInt(); // スキャナー処理
 
         // 並べ替えを適用
         if(order > 0) {
@@ -81,7 +81,7 @@ public class Main {
             Collections.sort(indices, Collections.reverseOrder());
         }
 
-        //出力結果
+        // 出力結果
         for(int index : indices) {
             System.out.println("都道府県名：" + prefectures[index].getName());
             System.out.println("県庁所在地：" + prefectures[index].getCapital());
