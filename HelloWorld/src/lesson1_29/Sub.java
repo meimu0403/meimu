@@ -1,25 +1,32 @@
 package lesson1_29;
 
 public class Sub { // 宣言
-    private String name;
-    private String capital;
-    private double area;
+	private String name;
+	private String capital;
+	private double area;
 
-    public Sub(String name, String capital, double area) { // コンストラクタ作成
-        this.name = name;
-        this.capital = capital;
-        this.area = area;
-    }
-
-    public String getName() { // getter処理
-        return name;
-    }
-
-    public String getCapital() {
-        return capital;
-    }
-
-    public double getArea() {
-        return area;
-    }
+	 // getter処理で県名を取得
+	public String getName() {
+		return name;
+	}
+	 // 県名をを設定
+	public void setName(String name) {
+		this.name = name;
+	}
+	 // 県庁所在地を取得
+	public String getCapital() {
+		return capital;
+	}
+	 // 県庁所在地を設定
+	public void setCapital(String capital) {
+		this.capital = capital;
+	}
+	 // 面積を取得
+	public double getArea() {
+		return area;
+	}
+	 // 面積を設定
+	public void setArea(double area) {
+		this.area = area;
+	}
 }
