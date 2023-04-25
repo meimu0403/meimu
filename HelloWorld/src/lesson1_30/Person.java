@@ -19,12 +19,13 @@ public class Person{
 	public double bmi() {
 		double height = 1.7;  // 身長は適当な値で固定
 		double bmi = weight/ (height * height); // bmiの計算式
-		return bmi; // 返す処理
+		String s = String.format("%.1f",bmi); // 小数点第一まで表示の指定
+		return Double.parseDouble(s); // 返す処理
 	}
 	public void print() {
 		System.out.println("名前は" + this.name + "です"); // nameの出力
 		System.out.println("年は" + this.age + "歳です"); // ageの出力
-		System.out.println("BMIは" + this.bmi() + "です"); // bmiの出力
+		System.out.println(String.format( "BMIは" + this.bmi() + "です")); // bmiの出力
 	}
 	public static void printCount() {
 		System.out.println("合計" + count + "人です"); // countの出力
