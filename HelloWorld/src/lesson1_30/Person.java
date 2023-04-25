@@ -25,7 +25,7 @@ public class Person{
 	public void print() {
 		System.out.println("名前は" + this.name + "です"); // nameの出力
 		System.out.println("年は" + this.age + "歳です"); // ageの出力
-		System.out.println(String.format( "BMIは" + this.bmi() + "です")); // bmiの出力
+		System.out.println(String.format( "BMIは" + Math.floor(this.bmi()) + "です")); // bmiの出力
 	}
 	public static void printCount() {
 		System.out.println("合計" + count + "人です"); // countの出力
