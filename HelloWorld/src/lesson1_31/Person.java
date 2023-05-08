@@ -7,7 +7,6 @@ public class Person{
 	public double height;
 	public double weight;
 	static int count = 0; // count初期化値設定
-	private Car car; 
 	// コンストラクタを定義しインスタンスフィールドに値をセット
 	public Person(String name, int age, double height, double weight){
 		this.name = name;
