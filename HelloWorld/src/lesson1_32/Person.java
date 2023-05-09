@@ -7,7 +7,7 @@ public class Person {
 	public double height;
 	public double weight;
 	static int count = 0;
-	Person(String name, int age, double height, double weight){
+	Person(String name, int age, double height, double weight){ // Personコンストラクタ定義
 		this.name = name;
 		this.age = age;
 		this.height = height;
